@@ -11,5 +11,7 @@ export default defineConfig({
       userAgent: '*',
       disallow: '\,'
     }]
+  }), sitemap({
+    lastmod: new Date()
   })]
 });
