@@ -7,12 +7,7 @@ import robotsTxt from 'astro-robots-txt';
 export default defineConfig({
   site: 'https://erklokken1337.dk',
   integrations: [
-      robotsTxt({
-        policy: [{
-          userAgent: '*',
-          disallow: '\,'
-        }]
-      }),
+      robotsTxt(),
       sitemap({
         lastmod: new Date()
       }),
