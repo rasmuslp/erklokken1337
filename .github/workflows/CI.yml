@@ -95,7 +95,7 @@ jobs:
           echo "Deployment tag: ${DEPLOY_TAG}"
 
           # Set output parameters.
-          echo ::set-output name=deployTag::${DEPLOY_TAG}
+          echo "deployTag=${DEPLOY_TAG}" >> "$GITHUB_OUTPUT"
 
       - name: Login to the GitHub Container Registry
         uses: docker/login-action@v2
