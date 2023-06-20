@@ -3,33 +3,15 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Er klokken 13:37?">
-	<main>
-		<h1>Er klokken <span class="text-gradient">13:37</span>?</h1>
+	<main class="grid gap-10 place-items-center h-screen content-center">
+		<h1 class="text-slate-700 dark:text-slate-200 font-bold text-4xl">
+			Er klokken <span class="bg-clip-text text-transparent bg-gradient-to-tr from-purple-500 to-pink-500">13:37</span>?
+		</h1>
 		<div id="state1337">
-			Måske
+			&nbsp;
 		</div>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-</style>
 
 <script>
 	const state1337Element = document.getElementById('state1337');
@@ -38,11 +20,18 @@ import Layout from '../layouts/Layout.astro';
 		const now = new Date();
 		const is1337 = now.getHours() === 13 && now.getMinutes() === 37;
 
+		const baseClasses = [
+			'font-extrabold',
+			'text-4xl'
+		];
+
 		if (is1337) {
 			state1337Element.innerHTML = 'Ja';
+			state1337Element.className = [...baseClasses, 'text-green-500', 'dark:text-green-600'].join(' ');
 		}
 		else {
 			state1337Element.innerHTML = 'Nej';
+			state1337Element.className = [...baseClasses, 'text-red-500', 'dark:text-red-600'].join(' ');
 		}
 	}
 </script>
