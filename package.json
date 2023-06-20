@@ -7,6 +7,8 @@
     "build": "astro build",
     "dev": "astro dev",
     "lint": "eslint --ext .js,.astro src/",
+    "check": "astro check",
+    "type-check": "tsc --noEmit",
     "preview": "astro preview",
     "start": "astro dev"
   },
