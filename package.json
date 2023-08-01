@@ -22,6 +22,6 @@
   "devDependencies": {
     "@typescript-eslint/parser": "5.60.1",
     "eslint": "8.45.0",
-    "eslint-plugin-astro": "0.27.2"
+    "eslint-plugin-astro": "0.28.0"
   }
 }
