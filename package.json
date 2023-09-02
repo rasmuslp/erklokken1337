@@ -7,7 +7,7 @@
     "build": "astro build",
     "check": "astro check",
     "dev": "astro dev",
-    "full-test": "npm run check && npm run lint && npm run type-check",
+    "full-test": "npm run check && npm run lint && npm run type-check && npm run build",
     "lint": "eslint --ext .js,.astro src/",
     "preview": "astro preview",
     "start": "astro dev",
