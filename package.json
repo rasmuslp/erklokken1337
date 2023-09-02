@@ -5,12 +5,13 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
-    "dev": "astro dev",
-    "lint": "eslint --ext .js,.astro src/",
     "check": "astro check",
-    "type-check": "tsc --noEmit",
+    "dev": "astro dev",
+    "full-test": "npm run check && npm run lint && npm run type-check",
+    "lint": "eslint --ext .js,.astro src/",
     "preview": "astro preview",
-    "start": "astro dev"
+    "start": "astro dev",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@astrojs/sitemap": "2.0.1",
@@ -20,8 +21,8 @@
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "6.2.1",
-    "eslint": "8.46.0",
-    "eslint-plugin-astro": "0.28.0"
+    "@typescript-eslint/parser": "6.5.0",
+    "eslint": "8.48.0",
+    "eslint-plugin-astro": "0.29.0"
   }
 }
