@@ -114,7 +114,7 @@ jobs:
           echo "VERSION_TAG=$(echo $DEPLOY_TAG | rev | cut -d':' -f 1 | rev)" >> $GITHUB_ENV
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: .
           build-args: |
