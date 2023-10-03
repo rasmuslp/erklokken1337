@@ -24,7 +24,7 @@ jobs:
         node: [18]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
@@ -68,7 +68,7 @@ jobs:
       imageDeployTag: ${{ steps.deploymentTag.outputs.deployTag }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
