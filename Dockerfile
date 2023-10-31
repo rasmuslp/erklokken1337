@@ -14,6 +14,6 @@ COPY src src
 RUN npm run build
 
 ### Runtime
-FROM httpd:2.4.57-alpine AS runtime
+FROM httpd:2.4.58-alpine AS runtime
 COPY --from=build /app/dist /usr/local/apache2/htdocs/
 EXPOSE 80
