@@ -7,6 +7,7 @@
 		"build": "astro build",
 		"check": "astro check",
 		"dev": "astro dev",
+		"docker:build": "docker build -t erklokken1337 .",
 		"format": "npm run prettier:write",
 		"full-test": "npm run check && npm run prettier:check && npm run lint && npm run type-check && npm run build",
 		"lint": "eslint src/",
