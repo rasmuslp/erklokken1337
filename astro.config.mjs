@@ -5,12 +5,12 @@ import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://erklokken1337.dk',
-  integrations: [
-      robotsTxt(),
-      sitemap({
-        lastmod: new Date()
-      }),
-      tailwind()
-    ]
+	site: 'https://erklokken1337.dk',
+	integrations: [
+		robotsTxt(),
+		sitemap({
+			lastmod: new Date(),
+		}),
+		tailwind(),
+	],
 });
