@@ -28,6 +28,6 @@
     "eslint-plugin-astro": "0.33.1"
   },
   "engines": {
-    "node": ">=18.14.1"
+    "node": ">=20.9.0"
   }
 }
