@@ -14,6 +14,7 @@ COPY src src
 RUN npm run build
 
 ### Runtime
-FROM httpd:2.4.60-alpine AS runtime
-COPY --from=build /app/dist /usr/local/apache2/htdocs/
-EXPOSE 80
+FROM nginx:1.27.0-alpine-slim AS runtime
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 8080
