@@ -1,6 +1,6 @@
-# erklokken1337-astro
+# erklokken1337
 
-[![Github: CI](https://github.com/rasmuslp/erklokken1337-astro/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/rasmuslp/erklokken1337-astro/actions)
+[![Github: CI](https://github.com/rasmuslp/erklokken1337/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/rasmuslp/erklokken1337/actions)
 
 # Astro Starter Kit: Basics
 
