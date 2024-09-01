@@ -24,7 +24,7 @@
 		"astro": "4.13.0",
 		"astro-robots-txt": "1.0.0",
 		"sharp-ico": "0.1.5",
-		"tailwindcss": "3.4.7",
+		"tailwindcss": "3.4.10",
 		"typescript": "5.5.4"
 	},
 	"devDependencies": {
