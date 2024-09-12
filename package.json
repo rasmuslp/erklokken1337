@@ -21,15 +21,15 @@
 		"@astrojs/check": "0.9.3",
 		"@astrojs/sitemap": "3.1.6",
 		"@astrojs/tailwind": "5.1.0",
-		"astro": "4.15.3",
+		"astro": "4.15.4",
 		"astro-robots-txt": "1.0.0",
 		"sharp-ico": "0.1.5",
-		"tailwindcss": "3.4.10",
-		"typescript": "5.5.4"
+		"tailwindcss": "3.4.11",
+		"typescript": "5.6.2"
 	},
 	"devDependencies": {
-		"@typescript-eslint/parser": "8.4.0",
-		"eslint": "9.9.1",
+		"@typescript-eslint/parser": "8.5.0",
+		"eslint": "9.10.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-astro": "1.2.3",
 		"prettier": "3.3.3",
