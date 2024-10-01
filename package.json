@@ -21,20 +21,20 @@
 		"@astrojs/check": "0.9.3",
 		"@astrojs/sitemap": "3.1.6",
 		"@astrojs/tailwind": "5.1.1",
-		"astro": "4.15.9",
+		"astro": "4.15.10",
 		"astro-robots-txt": "1.0.0",
 		"sharp-ico": "0.1.5",
 		"tailwindcss": "3.4.13",
 		"typescript": "5.6.2"
 	},
 	"devDependencies": {
-		"@typescript-eslint/parser": "8.7.0",
+		"@typescript-eslint/parser": "8.8.0",
 		"eslint": "9.11.1",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-astro": "1.2.4",
 		"prettier": "3.3.3",
 		"prettier-plugin-astro": "0.14.1",
-		"prettier-plugin-tailwindcss": "0.6.6"
+		"prettier-plugin-tailwindcss": "0.6.8"
 	},
 	"engines": {
 		"node": ">=20.9.0"
