@@ -6,10 +6,10 @@
 
 Check
 
--   ESLint plugin https://ota-meshi.github.io/eslint-plugin-astro/user-guide/
-    -   Do I extend my own, or how?
--   https://astro.build/integrations/
--   https://astro.build/themes/
+- ESLint plugin https://ota-meshi.github.io/eslint-plugin-astro/user-guide/
+    - Do I extend my own, or how?
+- https://astro.build/integrations/
+- https://astro.build/themes/
 
 ## 🚀 Project Structure
 
