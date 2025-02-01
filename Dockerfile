@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 
-COPY eslint.config.js astro.config.mjs tailwind.config.cjs tsconfig.json ./
+COPY eslint.config.js astro.config.mjs tsconfig.json ./
 COPY public public
 COPY src src
 
