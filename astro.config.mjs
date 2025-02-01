@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
@@ -11,6 +11,8 @@ export default defineConfig({
 		sitemap({
 			lastmod: new Date(),
 		}),
-		tailwind(),
 	],
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });
