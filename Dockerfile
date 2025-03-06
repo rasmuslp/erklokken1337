@@ -14,6 +14,6 @@ COPY src src
 RUN npm run build
 
 ### Runtime
-FROM nginx:1.27.3-alpine-slim AS runtime
+FROM nginx:1.27.4-alpine-slim AS runtime
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/dist /usr/share/nginx/html
