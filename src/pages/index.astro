@@ -18,14 +18,20 @@ import Layout from '../layouts/Layout.astro';
 
 <script>
 	const state1337Element = document.getElementById('state1337');
+	const targetHour = 13;
+	const targetMinute = 37;
+	const baseClasses = ['font-extrabold'];
 
-	if (state1337Element) {
+	function updateState() {
+		if (!state1337Element) {
+			throw new Error('State element not found');
+		}
+
 		const now = new Date();
-		const is1337 = now.getHours() === 13 && now.getMinutes() === 37;
+		const isTargetTime =
+			now.getHours() === targetHour && now.getMinutes() === targetMinute;
 
-		const baseClasses = ['font-extrabold'];
-
-		if (is1337) {
+		if (isTargetTime) {
 			state1337Element.innerHTML = 'Ja';
 			state1337Element.className = [
 				...baseClasses,
@@ -41,4 +47,32 @@ import Layout from '../layouts/Layout.astro';
 			].join(' ');
 		}
 	}
+
+	function updateAndScheduleNextCheck() {
+		try {
+			updateState();
+		} catch (error) {
+			console.error('Update failed:', error);
+		}
+
+		const now = new Date();
+		const highFrequency =
+			now.getHours() === targetHour &&
+			now.getMinutes() >= targetMinute - 1 &&
+			now.getMinutes() <= targetMinute + 1;
+
+		const nextCheckInMs = highFrequency
+			? 1000 - now.getMilliseconds()
+			: 60_000 - now.getSeconds() * 1000 - now.getMilliseconds();
+
+		setTimeout(updateAndScheduleNextCheck, nextCheckInMs);
+	}
+
+	document.addEventListener('visibilitychange', () => {
+		if (document.visibilityState === 'visible') {
+			updateState();
+		}
+	});
+
+	updateAndScheduleNextCheck();
 </script>
