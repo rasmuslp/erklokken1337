@@ -8,13 +8,14 @@ import ico from 'sharp-ico';
 const faviconSrc = path.resolve('src/images/favicon.png');
 
 export const GET: APIRoute = async () => {
-	const buffer = await sharp(faviconSrc)
+	const pngBuffer = await sharp(faviconSrc)
 		.resize(32)
 		.toFormat('png')
 		.toBuffer();
-	const icoBuffer = ico.encode([buffer]);
+	const icoBuffer = ico.encode([pngBuffer]);
+	const buffer = Buffer.from(icoBuffer);
 
-	return new Response(icoBuffer, {
+	return new Response(buffer, {
 		headers: { 'Content-Type': 'image/x-icon' },
 	});
 };
