@@ -19,6 +19,9 @@ updates:
 
   - package-ecosystem: 'docker'
     directory: '/'
+    ignore:
+      - dependency-name: 'node'
+        versions: ['>=25']
     labels:
       - 'dependencies'
       - 'docker'
