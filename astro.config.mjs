@@ -5,6 +5,7 @@ import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
 export default defineConfig({
+	security: { csp: true },
 	site: 'https://erklokken1337.dk',
 	integrations: [
 		robotsTxt(),
