@@ -19,16 +19,16 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "0.9.8",
-		"@astrojs/sitemap": "3.7.1",
+		"@astrojs/sitemap": "3.7.2",
 		"@tailwindcss/vite": "4.2.2",
-		"astro": "6.0.8",
+		"astro": "6.1.1",
 		"astro-robots-txt": "1.0.0",
 		"sharp-ico": "0.1.5",
 		"tailwindcss": "4.2.2",
 		"typescript": "5.9.3"
 	},
 	"devDependencies": {
-		"@typescript-eslint/parser": "8.57.1",
+		"@typescript-eslint/parser": "8.57.2",
 		"eslint": "10.1.0",
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-astro": "1.6.0",
