@@ -18,23 +18,23 @@
 		"type-check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@astrojs/check": "0.9.8",
+		"@astrojs/check": "0.9.9",
 		"@astrojs/sitemap": "3.7.2",
 		"@tailwindcss/vite": "4.2.2",
-		"astro": "6.1.9",
+		"astro": "6.2.1",
 		"astro-robots-txt": "1.0.0",
 		"sharp-ico": "0.1.5",
 		"tailwindcss": "4.2.4",
-		"typescript": "5.9.3"
+		"typescript": "6.0.3"
 	},
 	"devDependencies": {
-		"@typescript-eslint/parser": "8.59.0",
-		"eslint": "10.2.1",
+		"@typescript-eslint/parser": "8.59.1",
+		"eslint": "10.3.0",
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-astro": "1.7.0",
 		"prettier": "3.8.3",
 		"prettier-plugin-astro": "0.14.1",
-		"prettier-plugin-tailwindcss": "0.7.3"
+		"prettier-plugin-tailwindcss": "0.8.0"
 	},
 	"engines": {
 		"node": ">=22.13.0"
