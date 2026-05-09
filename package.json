@@ -21,14 +21,14 @@
 		"@astrojs/check": "0.9.9",
 		"@astrojs/sitemap": "3.7.2",
 		"@tailwindcss/vite": "4.2.2",
-		"astro": "6.2.1",
+		"astro": "6.3.1",
 		"astro-robots-txt": "1.0.0",
 		"sharp-ico": "0.1.5",
 		"tailwindcss": "4.2.4",
 		"typescript": "6.0.3"
 	},
 	"devDependencies": {
-		"@typescript-eslint/parser": "8.59.1",
+		"@typescript-eslint/parser": "8.59.2",
 		"eslint": "10.3.0",
 		"eslint-config-prettier": "10.1.8",
 		"eslint-plugin-astro": "1.7.0",
